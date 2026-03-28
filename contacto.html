@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECLIPSE — Contacto</title>
+  <meta name="description" content="Contáctanos. Estamos aquí para hacer de tu noche algo extraordinario." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background:radial-gradient(ellipse at 80% 20%, rgba(207,150,255,0.06) 0%, transparent 60%), var(--surface-dim);">
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">ECLIPSE</a>
+    <ul class="nav__links" role="list">
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+    </ul>
+    <a href="reservas.html" class="nav__cta">Reservar ahora</a>
+    <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile-menu">
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html" class="active">Contacto</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="reservas.html" class="nav__cta" style="margin-top:0.5rem;">Reservar ahora</a>
+  </div>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<main>
+  <div class="contacto-layout">
+
+    <!-- LEFT: Info -->
+    <div class="contacto-info animate-fade-in-up">
+      <span class="section-eyebrow">Estamos aquí</span>
+      <h1 class="contacto-info__title">
+        Habla con<br />
+        <span style="background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">nosotros</span>
+      </h1>
+      <p class="contacto-info__subtitle">
+        ¿Tienes preguntas sobre reservas, eventos o servicios VIP? Escríbenos y te responderemos antes de que caiga la noche.
+      </p>
+
+      <div class="contacto-item">
+        <div class="contacto-item__icon">📍</div>
+        <div>
+          <p class="contacto-item__label">Ubicación</p>
+          <p class="contacto-item__value">Calle 85 #11-44, Zona Rosa<br />Bogotá, Colombia</p>
+        </div>
+      </div>
+
+      <div class="contacto-item">
+        <div class="contacto-item__icon">✉️</div>
+        <div>
+          <p class="contacto-item__label">Email</p>
+          <p class="contacto-item__value">hola@eclipsenightclub.co</p>
+        </div>
+      </div>
+
+      <div class="contacto-item">
+        <div class="contacto-item__icon">📞</div>
+        <div>
+          <p class="contacto-item__label">Teléfono / WhatsApp</p>
+          <p class="contacto-item__value">+57 301 555 0123</p>
+        </div>
+      </div>
+
+      <div class="contacto-item">
+        <div class="contacto-item__icon">🕐</div>
+        <div>
+          <p class="contacto-item__label">Horario</p>
+          <p class="contacto-item__value">Jue – Dom: 10:00 PM – 5:00 AM<br />Lun – Mié: Cerrado</p>
+        </div>
+      </div>
+
+      <!-- Social links -->
+      <div style="margin-top:var(--space-8);">
+        <p class="contacto-item__label" style="margin-bottom:var(--space-4);">Síguenos</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+          <a href="#" class="footer__social-link" aria-label="Spotify">SP</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contacto-form-wrapper animate-fade-in-up delay-1">
+      <h2 style="font-family:var(--font-headline);font-size:1.5rem;font-weight:700;letter-spacing:-0.03em;color:#fff;margin-bottom:var(--space-8);">
+        Envíanos un mensaje
+      </h2>
+
+      <form id="contact-form" novalidate>
+
+        <div class="form-field">
+          <label class="form-label" for="c-nombre">Nombre completo</label>
+          <input
+            class="form-input"
+            type="text"
+            id="c-nombre"
+            name="nombre"
+            placeholder="Ej. Valentina Cruz"
+            autocomplete="name"
+            data-required
+          />
+          <p class="form-error-msg" id="c-nombre-error" role="alert"></p>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="c-email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="c-email"
+            name="email"
+            placeholder="tu@email.com"
+            autocomplete="email"
+            data-required
+          />
+          <p class="form-error-msg" id="c-email-error" role="alert"></p>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="c-asunto">Asunto</label>
+          <select class="form-select" id="c-asunto" name="asunto">
+            <option value="">Selecciona un motivo</option>
+            <option value="reserva">Información sobre reservas</option>
+            <option value="vip">Mesa VIP</option>
+            <option value="evento">Evento privado</option>
+            <option value="prensa">Prensa y medios</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="c-mensaje">Mensaje</label>
+          <textarea
+            class="form-textarea"
+            id="c-mensaje"
+            name="mensaje"
+            placeholder="Cuéntanos qué necesitas…"
+            rows="4"
+            data-required
+          ></textarea>
+          <p class="form-error-msg" id="c-mensaje-error" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn-primary contact-submit-btn" style="width:100%;justify-content:center;margin-top:var(--space-4);">
+          Enviar mensaje
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo">ECLIPSE</p>
+        <p class="footer__tagline">Donde la noche encuentra su verdadera forma.</p>
+      </div>
+      <nav class="footer__links">
+        <div class="footer__col">
+          <span class="footer__col-title">Social</span>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Facebook</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Club</span>
+          <a href="servicios.html">Servicios</a>
+          <a href="reservas.html">Reservas</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Legal</span>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Eclipse Nightclub. Todos los derechos reservados.</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
+        <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

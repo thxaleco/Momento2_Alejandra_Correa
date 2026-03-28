@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECLIPSE — Servicios</title>
+  <meta name="description" content="Eventos, Mesas VIP y DJs invitados. Descubre todo lo que ECLIPSE tiene para ti." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">ECLIPSE</a>
+    <ul class="nav__links" role="list">
+      <li><a href="servicios.html" class="active">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+    </ul>
+    <a href="reservas.html" class="nav__cta">Reservar ahora</a>
+    <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile-menu">
+    <a href="servicios.html" class="active">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="reservas.html" class="nav__cta" style="margin-top:0.5rem;">Reservar ahora</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <span class="section-eyebrow" style="color:var(--secondary);">Lo que ofrecemos</span>
+  <h1 class="page-hero__title reveal">
+    Servicios<br /><em style="color:var(--on-surface-variant);font-weight:300;">de otro nivel</em>
+  </h1>
+  <p class="page-hero__subtitle reveal delay-1">
+    Desde eventos temáticos que redefinen la noche hasta mesas VIP con atención personalizada y los mejores DJs del circuito internacional.
+  </p>
+</header>
+
+<!-- ============================================================
+     SECCIÓN EVENTOS
+     ============================================================ -->
+<section class="servicios-section" aria-labelledby="eventos-title">
+  <div class="servicios-section__inner">
+    <span class="section-eyebrow">Agenda</span>
+    <h2 class="section-title reveal" id="eventos-title">Eventos</h2>
+    <p class="reveal" style="color:var(--on-surface-variant);max-width:560px;margin-bottom:0;">
+      Noches temáticas, lanzamientos exclusivos y experiencias sensoriales diseñadas para que cada visita sea única.
+    </p>
+
+    <div class="servicios-section__grid">
+
+      <article class="service-card reveal">
+        <div class="service-card__img-wrap">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuChW50BM9PaDp-z04WU3Of2g09eRTn1XQBl-5TcU7zXFnX4fZipLIQh10HHS0aknqNuvNqNbnIIeAmq_kdydWJneBHEUzcPMIBOZOuhNU2fs9mfecWmIbkgj-VJaQbFdqt5YF5h5keFkG510aOqxrOubPBW82zc4xfDoD77bOzEMiegSMvo7LhzIcPUK3A24oYfTapS9ThhnsriObyhw9sxso_yVCal6q4Mo3rrVd0HU3QIdYCgnFNq0S6TSkk1LSiRrPIzqCPAeLA"
+            alt="Evento Chromatic — pista de baile con láseres"
+            loading="lazy"
+          />
+          <div class="service-card__img-overlay"></div>
+          <span class="service-card__badge">Este viernes</span>
+        </div>
+        <div class="service-card__body">
+          <h3 class="service-card__title">Chromatic Night</h3>
+          <p class="service-card__desc">
+            Una explosión sensorial de luces y sonido. Cada viernes el Main Hall se convierte en un lienzo de láseres, humo y basslines que sacuden el alma.
+          </p>
+          <a href="reservas.html" class="service-card__cta">
+            Reservar lugar
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="service-card reveal delay-1">
+        <div class="service-card__img-wrap">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOzpBuH1haw4tPQ_hU9_vwMgHUOd-kK4A-vEY6qD0MSQXtGTaXkq5pknhkWx0eEtAmTaM-91dYpIJnsO_rIA5-w8moj6fz0GnS_Q1pt-9c_fLsVDhVH0Zi6Ho0hmSyk3CY9UVAXcpXe7rERng-NspA5mx-Bc2zJoqMfGWmoUXHXYFVNh-_0vnj40mFMu7ZN1_TskNY_xCdn6heSMLMn98BDGpCH6-7Dih0x56DzfMbA6GnHnTp701mgTDPvd6gD3_jKS_hRzbQ25M"
+            alt="Dark Frequency — evento especial"
+            loading="lazy"
+          />
+          <div class="service-card__img-overlay"></div>
+          <span class="service-card__badge" style="color:var(--secondary);border-color:rgba(0,238,252,0.3);">Próximo sábado</span>
+        </div>
+        <div class="service-card__body">
+          <h3 class="service-card__title">Dark Frequency</h3>
+          <p class="service-card__desc">
+            Una noche dedicada al techno más oscuro e hipnótico. Artistas internacionales y un set de luces diseñado exclusivamente para este evento.
+          </p>
+          <a href="reservas.html" class="service-card__cta">
+            Reservar lugar
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="service-card reveal delay-2">
+        <div class="service-card__img-wrap">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVX3b_N5Egzev3M5qG0bDAL5c8v1-8G8-kCy0jG1o7C338K4OVlCMFkacXjb7DS7-PETaaALwwVS1cxkzQ6FUaIwI68kQkIc2gCaE0Y0cAn814QvX_ySujnHW9VuzlA74JArTJ6O-DtgeuWDHwr--W11S96RUjrX4enNGgFOLfF5APo-38482obCZQyfcP_7WeC1HPgWLPiK42_ZxIWRExDrii5cj5KJ4YSjiAJzMfpzEq1Z3TyjTL34jxe6-AHPT-kmbGSRyqOxI"
+            alt="After Glow — evento especial"
+            loading="lazy"
+          />
+          <div class="service-card__img-overlay"></div>
+          <span class="service-card__badge" style="color:var(--tertiary);border-color:rgba(255,110,129,0.3);">Evento especial</span>
+        </div>
+        <div class="service-card__body">
+          <h3 class="service-card__title">After Glow</h3>
+          <p class="service-card__desc">
+            El evento de cierre de temporada más exclusivo del año. Lista de invitados limitada, artistas sorpresa y una producción visual sin precedentes.
+          </p>
+          <a href="reservas.html" class="service-card__cta">
+            Reservar lugar
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN MESAS VIP
+     ============================================================ -->
+<section class="servicios-section" aria-labelledby="vip-title">
+  <div class="servicios-section__inner">
+    <span class="section-eyebrow" style="color:var(--primary);">Exclusivo</span>
+    <h2 class="section-title reveal" id="vip-title">Mesas <em>VIP</em></h2>
+    <p class="reveal" style="color:var(--on-surface-variant);max-width:560px;margin-bottom:0;">
+      Acceso preferencial, servicio de botella y atención personalizada en las zonas más exclusivas del club.
+    </p>
+
+    <div class="servicios-section__grid" style="margin-top:var(--space-12);">
+
+      <article class="service-card reveal">
+        <div class="service-card__img-wrap">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVX3b_N5Egzev3M5qG0bDAL5c8v1-8G8-kCy0jG1o7C338K4OVlCMFkacXjb7DS7-PETaaALwwVS1cxkzQ6FUaIwI68kQkIc2gCaE0Y0cAn814QvX_ySujnHW9VuzlA74JArTJ6O-DtgeuWDHwr--W11S96RUjrX4enNGgFOLfF5APo-38482obCZQyfcP_7WeC1HPgWLPiK42_ZxIWRExDrii5cj5KJ4YSjiAJzMfpzEq1Z3TyjTL34jxe6-AHPT-kmbGSRyqOxI"
+            alt="Mesa VIP Eclipse Premium"
+            loading="lazy"
+          />
+          <div class="service-card__img-overlay"></div>
+          <span class="service-card__badge">Premium</span>
+        </div>
+        <div class="service-card__body">
+          <h3 class="service-card__title">Eclipse VIP</h3>
+          <p class="service-card__desc">
+            La experiencia más elevada del club. Vista privilegiada a la pista, botellero personal, lista personalizada y acceso sin fila a todas las zonas.
+          </p>
+          <ul style="margin-bottom:var(--space-6);">
+            <li style="font-size:0.8rem;color:var(--on-surface-variant);margin-bottom:4px;">✦ Hasta 8 personas</li>
+            <li style="font-size:0.8rem;color:var(--on-surface-variant);margin-bottom:4px;">✦ 2 botellas premium incluidas</li>
+            <li style="font-size:0.8rem;color:var(--on-surface-variant);">✦ Acceso preferencial toda la noche</li>
+          </ul>
+          <a href="reservas.html" class="service-card__cta">
+            Reservar mesa VIP
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="service-card reveal delay-1">
+        <div class="service-card__img-wrap">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOzpBuH1haw4tPQ_hU9_vwMgHUOd-kK4A-vEY6qD0MSQXtGTaXkq5pknhkWx0eEtAmTaM-91dYpIJnsO_rIA5-w8moj6fz0GnS_Q1pt-9c_fLsVDhVH0Zi6Ho0hmSyk3CY9UVAXcpXe7rERng-NspA5mx-Bc2zJoqMfGWmoUXHXYFVNh-_0vnj40mFMu7ZN1_TskNY_xCdn6heSMLMn98BDGpCH6-7Dih0x56DzfMbA6GnHnTp701mgTDPvd6gD3_jKS_hRzbQ25M"
+            alt="Mesa Sky Lounge"
+            loading="lazy"
+          />
+          <div class="service-card__img-overlay"></div>
+          <span class="service-card__badge" style="color:var(--secondary);border-color:rgba(0,238,252,0.3);">Sky Lounge</span>
+        </div>
+        <div class="service-card__body">
+          <h3 class="service-card__title">Sky Lounge</h3>
+          <p class="service-card__desc">
+            El nivel más alto del club. Vista panorámica a toda la pista, ambiente íntimo y un servicio que anticipa cada deseo.
+          </p>
+          <ul style="margin-bottom:var(--space-6);">
+            <li style="font-size:0.8rem;color:var(--on-surface-variant);margin-bottom:4px;">✦ Hasta 12 personas</li>
+            <li style="font-size:0.8rem;color:var(--on-surface-variant);margin-bottom:4px;">✦ Sommelier personal</li>
+            <li style="font-size:0.8rem;color:var(--on-surface-variant);">✦ Menú privado de finger food</li>
+          </ul>
+          <a href="reservas.html" class="service-card__cta">
+            Reservar mesa VIP
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN DJs INVITADOS
+     ============================================================ -->
+<section class="servicios-section" aria-labelledby="dj-title">
+  <div class="servicios-section__inner">
+    <span class="section-eyebrow" style="color:var(--tertiary);">Lineup</span>
+    <h2 class="section-title reveal" id="dj-title">DJs <em>Invitados</em></h2>
+    <p class="reveal" style="color:var(--on-surface-variant);max-width:560px;margin-bottom:var(--space-12);">
+      Los mejores seleccionadores del circuito local e internacional pasan cada semana por nuestra cabina.
+    </p>
+
+    <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:800px;">
+
+      <div class="dj-card reveal">
+        <div class="dj-card__avatar">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHI7gzXX4Xo5bIFVF-aQ0dAvuqukXtLA10VkuhYbkcZJn8h95kalvNAndB2FviugNiGSCrndwERzxWMrKPbrEu6cmQ59NiXy04ya3D6ZCFCMX7gie_xDoIcP7dGlzt7n5Qn6k7_-KP-mzZrawHD39UIgr2UmGEY4FUnIRzRn9v-mMTMi-WU6lqlDcjC7WFs-iATaI79F7e5P6DUTKXozkWKg1fTL-vug-8cMwu0nYtPLYPBrQDUl7_dbaNcE47Cqn-k9FPqJ0cZUc" alt="DJ VOLTA" loading="lazy" />
+        </div>
+        <div>
+          <div class="pulse-indicator" style="margin-bottom:6px;">
+            <span class="pulse-indicator__dot"></span>
+            <span style="font-family:var(--font-label);font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--secondary);">Este viernes</span>
+          </div>
+          <p class="dj-card__name">VOLTA</p>
+          <p class="dj-card__genre">Techno · Industrial · Dark Rave</p>
+          <p class="dj-card__desc">Residente de Berghain y figura clave del techno oscuro europeo. Su set de 4 horas es una travesía sin retorno.</p>
+        </div>
+      </div>
+
+      <div class="dj-card reveal delay-1">
+        <div class="dj-card__avatar">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACuuiMaaKimp_nQ6RyhRFuVCHcjQjigp_1VXqo-GU_PpK7hANemDzGFg_L7USXrWf2EsscnOGi1na8ISieX4xRQaJ6ldZxXlmviSO7kEJfToh5MxAd1bFkRevz0KOW7FOEz2FAVEgeFAlxOa54GOSmsyjvhqAu6ri5_BWha0bUuibB8re4_l99aTVflrNIa3GpcLtvj_IDZLrckggXK7FL_oK9QclYNSi2DTB2duwD3OT5-oUW8vtZJMlAbg64idiUZzSTH_z-Tug" alt="DJ NOXIA" loading="lazy" />
+        </div>
+        <div>
+          <p class="dj-card__name">NOXIA</p>
+          <p class="dj-card__genre">House · Minimal · Deep Electronic</p>
+          <p class="dj-card__desc">Maestra de las transiciones fluidas y los grooves hipnóticos. Ha tocado en Fabric, DC10 y Output con sets que duran hasta el amanecer.</p>
+        </div>
+      </div>
+
+      <div class="dj-card reveal delay-2">
+        <div class="dj-card__avatar">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHI7gzXX4Xo5bIFVF-aQ0dAvuqukXtLA10VkuhYbkcZJn8h95kalvNAndB2FviugNiGSCrndwERzxWMrKPbrEu6cmQ59NiXy04ya3D6ZCFCMX7gie_xDoIcP7dGlzt7n5Qn6k7_-KP-mzZrawHD39UIgr2UmGEY4FUnIRzRn9v-mMTMi-WU6lqlDcjC7WFs-iATaI79F7e5P6DUTKXozkWKg1fTL-vug-8cMwu0nYtPLYPBrQDUl7_dbaNcE47Cqn-k9FPqJ0cZUc" alt="DJ KAIRO" loading="lazy" />
+        </div>
+        <div>
+          <p class="dj-card__name">KAIRO</p>
+          <p class="dj-card__genre">Afro-House · Neo-Soul · World Electronic</p>
+          <p class="dj-card__desc">Fusiona ritmos africanos con producción electrónica de vanguardia. Sus sets conectan lo ancestral con lo futurista.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo">ECLIPSE</p>
+        <p class="footer__tagline">Donde la noche encuentra su verdadera forma.</p>
+      </div>
+      <nav class="footer__links">
+        <div class="footer__col">
+          <span class="footer__col-title">Social</span>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Facebook</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Club</span>
+          <a href="servicios.html">Servicios</a>
+          <a href="reservas.html">Reservas</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Legal</span>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Eclipse Nightclub. Todos los derechos reservados.</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
+        <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECLIPSE — Reservas</title>
+  <meta name="description" content="Asegura tu lugar en ECLIPSE. Reservas VIP, General y Eventos especiales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="reservas-bg">
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">ECLIPSE</a>
+    <ul class="nav__links" role="list">
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="reservas.html" class="active">Reservas</a></li>
+    </ul>
+    <a href="reservas.html" class="nav__cta">Reservar ahora</a>
+    <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile-menu">
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="reservas.html" class="active">Reservas</a>
+    <a href="reservas.html" class="nav__cta" style="margin-top:0.5rem;">Reservar ahora</a>
+  </div>
+</nav>
+
+<!-- Background image -->
+<div style="position:fixed;inset:0;z-index:-1;opacity:0.3;">
+  <img
+    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY5JLz_anujisC8t2Vazye6eZldlgFyY5PIxEVgIadnBnE8-unctKiVA47kykcEJC-A_Q5QQJaKarSzaeZxgNlKXZ83jfLvCcl24rUKBDe8m4BtDQlk07MnGIl4lE-CGEFxy0SQZ-0N14si69RPnzu89EX-33L4rwMW4HbevZ098tXQJhWTsmkEUpGIS0Ha8qw-jrFUKzTO9gmrmwDEO8Wl3_I014hJLJ5BxD3qHVc_Akf8rQprIkG8RpwCJ7rjAFSKu9D6Y9DhJo"
+    alt=""
+    role="presentation"
+    style="width:100%;height:100%;object-fit:cover;"
+  />
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom, var(--surface-dim) 0%, transparent 40%, var(--surface-dim) 100%);"></div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<main>
+  <div class="reservas-layout">
+
+    <!-- LEFT: Editorial -->
+    <div class="reservas-editorial animate-fade-in-up">
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1.5rem;">
+        <span style="width:8px;height:8px;border-radius:9999px;background:var(--secondary);animation:pulse 2s ease infinite;display:block;"></span>
+        <span style="font-family:var(--font-label);font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--secondary);">Disponibilidad limitada</span>
+      </div>
+
+      <h1 class="reservas-editorial__title">
+        El<br />
+        <span>ECLIPSE</span><br />
+        te espera.
+      </h1>
+
+      <p class="reservas-editorial__desc">
+        Asegura tu lugar en el epicentro de la noche. Desde la exclusividad de nuestro VIP hasta la energía del Main Hall, diseñamos experiencias que trascienden lo ordinario.
+      </p>
+
+      <div>
+        <div class="reservas-benefit">
+          <span class="reservas-benefit__icon">🎟️</span>
+          <div>
+            <p class="reservas-benefit__title">Acceso Preferencial</p>
+            <p class="reservas-benefit__desc">Evita esperas innecesarias con tu reserva confirmada. Entrada directa.</p>
+          </div>
+        </div>
+
+        <div class="reservas-benefit">
+          <span class="reservas-benefit__icon">⭐</span>
+          <div>
+            <p class="reservas-benefit__title">Servicio de Botella VIP</p>
+            <p class="reservas-benefit__desc">Atención personalizada y selección premium en zona VIP.</p>
+          </div>
+        </div>
+
+        <div class="reservas-benefit">
+          <span class="reservas-benefit__icon">🔒</span>
+          <div>
+            <p class="reservas-benefit__title">Reserva Garantizada</p>
+            <p class="reservas-benefit__desc">Tu lugar asegurado. Sin sorpresas, sin listas de espera.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="reservas-form-card animate-fade-in-up delay-1">
+      <h2 style="font-family:var(--font-headline);font-size:1.25rem;font-weight:700;letter-spacing:-0.03em;color:#fff;margin-bottom:var(--space-8);">
+        Completa tu reserva
+      </h2>
+
+      <form id="reservas-form" novalidate>
+
+        <!-- Nombre -->
+        <div class="form-field">
+          <label class="form-label" for="r-nombre">Nombre completo</label>
+          <input
+            class="form-input"
+            type="text"
+            id="r-nombre"
+            name="nombre"
+            placeholder="Ej. Juliana Casablancas"
+            autocomplete="name"
+          />
+          <p class="form-error-msg" id="r-nombre-error" role="alert"></p>
+        </div>
+
+        <!-- Email -->
+        <div class="form-field">
+          <label class="form-label" for="r-email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="r-email"
+            name="email"
+            placeholder="tu@email.com"
+            autocomplete="email"
+          />
+          <p class="form-error-msg" id="r-email-error" role="alert"></p>
+        </div>
+
+        <!-- Fecha + Personas -->
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label" for="r-fecha">Fecha de visita</label>
+            <input
+              class="form-input"
+              type="date"
+              id="r-fecha"
+              name="fecha"
+            />
+            <p class="form-error-msg" id="r-fecha-error" role="alert"></p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="r-personas">N.º de personas</label>
+            <input
+              class="form-input"
+              type="number"
+              id="r-personas"
+              name="personas"
+              min="1"
+              max="20"
+              placeholder="1 – 20"
+            />
+            <p class="form-error-msg" id="r-personas-error" role="alert"></p>
+          </div>
+        </div>
+
+        <!-- Tipo de experiencia -->
+        <div class="form-field">
+          <label class="form-label">Tipo de experiencia</label>
+          <div class="experience-grid" role="group" aria-label="Selecciona tipo de experiencia">
+            <button type="button" class="exp-btn" data-exp="VIP" aria-pressed="false">
+              <p class="exp-btn__name">VIP</p>
+              <p class="exp-btn__sub">Mesas &amp; Botellas</p>
+            </button>
+            <button type="button" class="exp-btn" data-exp="General" aria-pressed="false">
+              <p class="exp-btn__name">General</p>
+              <p class="exp-btn__sub">Acceso Pista</p>
+            </button>
+            <button type="button" class="exp-btn" data-exp="Evento" aria-pressed="false">
+              <p class="exp-btn__name">Evento</p>
+              <p class="exp-btn__sub">Guest List</p>
+            </button>
+          </div>
+          <p class="form-error-msg" id="r-experiencia-error" role="alert"></p>
+        </div>
+
+        <!-- Dynamic Summary -->
+        <div class="reserva-summary" id="reserva-summary" aria-live="polite" aria-label="Resumen de reserva">
+          <p class="reserva-summary__title">Resumen de tu reserva</p>
+
+          <div class="reserva-summary__row">
+            <span>Nombre</span>
+            <strong id="sum-nombre">—</strong>
+          </div>
+          <div class="reserva-summary__row">
+            <span>Email</span>
+            <strong id="sum-email">—</strong>
+          </div>
+          <div class="reserva-summary__row">
+            <span>Fecha</span>
+            <strong id="sum-fecha">—</strong>
+          </div>
+          <div class="reserva-summary__row">
+            <span>Personas</span>
+            <strong id="sum-personas">—</strong>
+          </div>
+          <div class="reserva-summary__row">
+            <span>Experiencia</span>
+            <strong id="sum-exp">—</strong>
+          </div>
+
+          <!-- VIP special message -->
+          <div class="reserva-summary__vip-msg" id="vip-msg">
+            ✦ Experiencia VIP — Un anfitrión personal se comunicará contigo 24h antes para coordinar tu llegada.
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div style="padding-top:var(--space-6);">
+          <button
+            type="submit"
+            class="btn-primary reservas-submit-btn"
+            style="width:100%;justify-content:center;box-shadow:0 10px 40px -10px rgba(207,150,255,0.3);"
+          >
+            Confirmar Reserva
+          </button>
+          <p style="text-align:center;font-size:0.65rem;color:var(--outline-variant);margin-top:1rem;letter-spacing:0.1em;text-transform:uppercase;">
+            Al confirmar, aceptas nuestras políticas de etiqueta y acceso.
+          </p>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     CONFIRMATION OVERLAY
+     ============================================================ -->
+<div class="confirmation-overlay" id="confirmation-overlay" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+  <div class="confirmation-card">
+    <span class="confirmation-icon" aria-hidden="true">✦</span>
+    <h2 class="confirmation-title" id="confirm-title">Reserva Confirmada</h2>
+    <p class="confirmation-sub" id="confirm-details">
+      Tu lugar en ECLIPSE está asegurado.
+    </p>
+    <p class="confirmation-code" id="confirm-code">ECL-XXXXXX</p>
+    <p style="font-size:0.8rem;color:var(--on-surface-variant);margin-bottom:var(--space-8);">
+      Revisa tu correo para el comprobante de reserva. ¡Nos vemos en la pista!
+    </p>
+    <button id="confirm-close" class="btn-primary" style="width:100%;justify-content:center;">
+      Volver al sitio
+    </button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" style="position:relative;z-index:1;">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo">ECLIPSE</p>
+        <p class="footer__tagline">Donde la noche encuentra su verdadera forma.</p>
+      </div>
+      <nav class="footer__links">
+        <div class="footer__col">
+          <span class="footer__col-title">Social</span>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Facebook</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Club</span>
+          <a href="servicios.html">Servicios</a>
+          <a href="reservas.html">Reservas</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Legal</span>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Eclipse Nightclub. Todos los derechos reservados.</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
+        <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Set minimum date to today -->
+<script>
+  const fechaInput = document.getElementById('r-fecha');
+  if (fechaInput) {
+    const today = new Date().toISOString().split('T')[0];
+    fechaInput.setAttribute('min', today);
+  }
+</script>
+
+</body>
+</html>
