@@ -109,6 +109,26 @@ if (contactForm) {
    RESERVAS PAGE — Interactive Reservation Form
    ============================================================ */
 (function initReservasPage() {
+  const saved = localStorage.getItem('eclipseReserva');
+  if (saved) {
+  const parsed = JSON.parse(saved);
+  Object.assign(state, parsed);
+
+  // rellenar inputs
+  if (inputs.nombre) inputs.nombre.value = state.nombre;
+  if (inputs.email) inputs.email.value = state.email;
+  if (inputs.fecha) inputs.fecha.value = state.fecha;
+  if (inputs.personas) inputs.personas.value = state.personas;
+
+  // experiencia
+  expButtons.forEach((btn) => {
+    if (btn.dataset.exp === state.experiencia) {
+      btn.click();
+    }
+  });
+
+  updateSummary();
+}
   const form = document.getElementById('reservas-form');
   if (!form) return;
 
@@ -179,6 +199,8 @@ if (contactForm) {
 
   /* ---- Summary updater ---- */
   function updateSummary() {
+    localStorage.setItem('eclipseReserva', JSON.stringify(state));
+    
     const hasAny = state.nombre || state.fecha || state.personas || state.experiencia;
     if (!hasAny) { summary.classList.remove('visible'); return; }
 
