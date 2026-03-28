@@ -129,13 +129,12 @@ input, select, textarea { font: inherit; }
   margin: 0 auto;
 }
 
-.nav__logo {
-  font-family: var(--font-headline);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  color: #fff;
-  text-transform: uppercase;
+.nav__logo-img {
+  height: 200px;
+  width: auto;
+  display: block;
+  position: absolute;
+  margin: 10px
 }
 
 .nav__links {
